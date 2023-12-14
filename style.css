@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-part{
+    width: 40%;
+    /* border-radius: .5rem 0 0 .5rem; */
+}
+
+.image-part img{
+    width: 100%;
+}
+
+.image{
+    width: 45%;
+
+}
+
+.context-part{
+    width: 60%;
+    padding: 1rem;
+    position: relative;
+    right: 50px;
+    background-color: white;
+}
+
+.header{
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.text{
+    font-size: 13px;
+    color: var(--Very-Dark-Grayish-Blue);
+    opacity: .8;
+    font-weight: 500;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 13px;
+}
+
+.name{
+    margin: 0;
+    font-size: 13px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.date{
+    margin: 0;
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
