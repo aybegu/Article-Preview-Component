@@ -54,7 +54,6 @@ body{
     width: 50%;
     clip-path: inset(0 4.5rem 0 0);
     border-radius: .5rem 0 0 .5rem;
-
 }
 
 .context-part{
@@ -74,8 +73,11 @@ body{
     color: var(--Very-Dark-Grayish-Blue);
     margin: 0;
     padding: 0;
-    font-weight: 800;
-    font-size: 21px;
+    /* font-weight: 800;
+    font-size: 21px; */
+    font-size: 1.25rem;
+    letter-spacing: 0.035rem;
+    font-weight: 700;
 }
 
 .text{
@@ -138,21 +140,67 @@ body{
     letter-spacing: .5px;
 }
 
-.share{
+.share-button{
     border: none;
     border-radius: 50%;
-    width: 33px;
-    height: 33px;
+    width: 16px;
+    height: 16px;
     background-color: var(--Light-Grayish-Blue);
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
     padding: .6rem;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
-.share:hover{
+.share-button:hover{
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+.share-button:hover svg path{
+    fill: var(--Light-Grayish-Blue);
+}
+
+.share{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 220px;
+    height: 55px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 100;
+    padding: 0 1rem;
+    position: absolute;
+    right: -120px;
+    top: 100px;
+    /* visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear; */
+}
+
+.share p{
+    text-transform: uppercase;
+    color: var(--Light-Grayish-Blue);
+    font-weight: 200;
+
+}
+
+.icons{
+    transition: all .2s ease-in-out;
+}
+
+.icons:hover{
     cursor: pointer;
 }
+
+.fading{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .attribution { 
     font-size: 11px; 
