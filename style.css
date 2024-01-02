@@ -166,25 +166,38 @@ body{
     background-color: var(--Very-Dark-Grayish-Blue);
     width: 220px;
     height: 55px;
-    border-radius: .5rem;
+    border-radius: .7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     font-weight: 100;
-    padding: 0 1rem;
+    padding: 0.2rem 1.3rem;
     position: absolute;
-    right: -120px;
+    right: -115px;
     top: 100px;
-    /* visibility: hidden;
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 0.2s linear, opacity 0.2s linear; */
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.arrow{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: -10px;
 }
 
 .share p{
     text-transform: uppercase;
-    color: var(--Light-Grayish-Blue);
+    color: var(--Grayish-Blue);
     font-weight: 200;
+    letter-spacing: .4rem;
+    font-size: 13px;
+    font-weight: 500;
+    padding-right: .4rem;
 
 }
 
